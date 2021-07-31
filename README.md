@@ -13,11 +13,23 @@ Flutter Mobile Development Internship Assignment. A Real-Time Cloud Sync Applica
     
 
 ## SnapShots
-<table>
+ <table>
   <tr>
     <td>Login Screen</td>
      <td>Choose Account</td>
-    <td>Tasks Page</td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/68506823/127751537-08b3becb-f64a-4c79-9308-34d2e9e6ca7d.jpg" width=270 height=480></td>
+    <td><img src="https://user-images.githubusercontent.com/68506823/127751542-954104ac-5211-4224-a9ee-00624c9cd55f.jpg" width=270 height=480></td>
+  </tr>
+ </table>
+
+
+<table>
+  <tr>
+    <td>Main Screen</td>
+     <td>Referrals Screen</td>
+    <td>App Drawer</td>
   </tr>
   <tr>
     <td><img src="https://user-images.githubusercontent.com/68506823/127751016-de57c28b-8fc7-4916-9de0-95cbaf346648.jpg" width=270 height=480></td>
@@ -25,5 +37,10 @@ Flutter Mobile Development Internship Assignment. A Real-Time Cloud Sync Applica
     <td><img src="https://user-images.githubusercontent.com/68506823/127751025-4c1ca27e-5049-42af-b913-6e8016125829.jpg" width=270 height=480></td>
   </tr>
  </table>
+ 
+ ![Screenshot_20210801_014705_com example referral_app](https://user-images.githubusercontent.com/68506823/127751537-08b3becb-f64a-4c79-9308-34d2e9e6ca7d.jpg)
+![Screenshot_20210801_014710_com google android gms](https://user-images.githubusercontent.com/68506823/127751542-954104ac-5211-4224-a9ee-00624c9cd55f.jpg)
+
+ 
 
  
