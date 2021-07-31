@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:referral_app/authentication/authentication.dart';
 import 'package:referral_app/screens/homeScreen.dart';
@@ -58,7 +57,7 @@ class MyDrawerState extends State<MyDrawer> {
               "Version",
               style: TextStyle(fontSize: 16),
             ),
-            subtitle: Text("0.1"),
+            subtitle: Text("0.1 (Preview)"),
             // trailing: Icon(Icons.edit),
           )
         ],
