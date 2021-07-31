@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.referral_app">
    <application
-        android:label="referral_app"
+        android:label="Referral App"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
