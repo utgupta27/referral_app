@@ -1,2 +1,2 @@
 # referral_app
-Initial Assessment Test of Fight Forecaster
+Flutter Mobile Development Internship Assignment.
