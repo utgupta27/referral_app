@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:referral_app/authentication/authentication.dart';
 import 'package:referral_app/screens/signInScreen.dart';
 
@@ -15,22 +16,32 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   late User _user;
+  final FirebaseFirestore _firebase = FirebaseFirestore.instance;
+
+  @override
+  void initState() {
+    _user = widget._user;
+    initUserDoc();
+    super.initState();
+  }
+
+  initUserDoc() {
+    final CollectionReference userCol = _firebase.collection('users');
+    userCol
+        .doc(_user.email)
+        .collection('referrals')
+        .doc('init')
+        .set({'init': 'configured'});
+    userCol
+        .doc(_user.email)
+        .collection('referred')
+        .doc('init')
+        .set({'init': 'configured'});
+  }
+
   Route _routeToSignInScreen() {
     return PageRouteBuilder(
       pageBuilder: (context, animation, secondaryAnimation) => SignInScreen(),
-      transitionsBuilder: (context, animation, secondaryAnimation, child) {
-        var begin = Offset(-1.0, 0.0);
-        var end = Offset.zero;
-        var curve = Curves.ease;
-
-        var tween =
-            Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
-
-        return SlideTransition(
-          position: animation.drive(tween),
-          child: child,
-        );
-      },
     );
   }
 
@@ -38,6 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.deepPurple,
         title: Text("Referral App"),
         actions: [
           IconButton(
@@ -50,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       ),
       body: Center(
-        child: Text("Home Screen"),
+        child: Text("${_user.email.toString()}"),
       ),
     );
   }
