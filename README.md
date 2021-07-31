@@ -1,6 +1,6 @@
 
 # ![favicon-32x32](https://user-images.githubusercontent.com/68506823/127750861-5ddb9a04-4b26-48f5-8691-59b620dd55be.png)  Referral App
-Flutter Mobile Development Internship Assignment. A Cross-Platform Real-Time Cloud Sync Application for Referring Apps to Friends via their E-mail.
+Flutter Mobile Development Internship Assignment. A Real-Time Cloud Sync Application for Referring Apps to Friends via their E-mail.
 
 ## Try Now
 <a href="https://github.com/utgupta27/referral_app/releases/download/0.1/Referral_App_v0.1.apk" target="_blank">![image](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)</a> 
