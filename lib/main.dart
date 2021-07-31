@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Referral App",
+      debugShowCheckedModeBanner: false,
       home: SignInScreen(),
     );
   }
