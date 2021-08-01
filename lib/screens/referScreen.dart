@@ -55,7 +55,7 @@ class ReferScreenState extends State<ReferScreen> {
                       border: InputBorder.none,
                       hintText: 'Enter Email ',
                       filled: true,
-                      fillColor: Colors.grey[200],
+                      // fillColor: Colors.grey[200],
                       contentPadding: const EdgeInsets.only(
                           left: 14.0, bottom: 6.0, top: 8.0),
                       focusedBorder: OutlineInputBorder(

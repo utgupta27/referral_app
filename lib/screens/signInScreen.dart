@@ -122,7 +122,7 @@ class _SignInScreenState extends State<SignInScreen> {
                                       child: Text(
                                         'Sign in with Google',
                                         style: TextStyle(
-                                          fontSize: 36,
+                                          fontSize: 26,
                                           color: Colors.black54,
                                           fontWeight: FontWeight.w600,
                                         ),
