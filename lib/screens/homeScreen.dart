@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 // import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:referral_app/screens/allReferralsScreen.dart';
+import 'package:referral_app/screens/allReferredScreen.dart';
 import 'package:referral_app/screens/referScreen.dart';
 import 'package:referral_app/screens/scaffoldDrawer.dart';
 
@@ -52,6 +53,11 @@ class _HomeScreenState extends State<HomeScreen> {
           MaterialPageRoute(builder: (_) => new AllReferralsScreen()),
         );
         break;
+      case 1:
+        Navigator.of(context).push(
+          MaterialPageRoute(builder: (_) => new AllReferredbyScreen()),
+        );
+        break;
       default:
     }
   }
@@ -70,6 +76,10 @@ class _HomeScreenState extends State<HomeScreen> {
               PopupMenuItem<int>(
                 child: Text("View Referrals"),
                 value: 0,
+              ),
+              PopupMenuItem<int>(
+                child: Text("Referred By"),
+                value: 1,
               )
             ];
           })

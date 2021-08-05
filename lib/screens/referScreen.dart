@@ -24,6 +24,9 @@ class ReferScreenState extends State<ReferScreen> {
     userCol.doc(MyDrawer.data[2]).collection('referrals').doc(email.text).set({
       "date": DateTime.now(),
     });
+    userCol.doc(email.text).collection('referredby').doc(MyDrawer.data[2]).set({
+      "date": DateTime.now(),
+    });
   }
 
   @override
