@@ -8,7 +8,7 @@ class AllReferredbyScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FirebaseFirestore _firebase = FirebaseFirestore.instance;
+    final FirebaseFirestore _firebase1 = FirebaseFirestore.instance;
     return Scaffold(
       appBar: AppBar(
         title: Text("Referred By"),
@@ -16,7 +16,7 @@ class AllReferredbyScreen extends StatelessWidget {
       ),
       body: Center(
         child: new StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
-          stream: _firebase
+          stream: _firebase1
               .collection("users")
               .doc(HomeScreen.data[2])
               .collection('referredby')
